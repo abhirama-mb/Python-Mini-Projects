@@ -24,3 +24,6 @@ print(f"You have generated total of {count_times} random numbers.\n")
 # ✅ No need to store the rolls in a list unless you need them later.
 # ✅ break is preferred over exit() for ending the loop.
 # ✅ Used _ as the loop variable since it isn't used.
+
+
+# add expection handling
