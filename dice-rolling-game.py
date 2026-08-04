@@ -5,13 +5,9 @@ while True:
     if choice=='y':
 
         num=int(input("GREAT!!\nHow many ? : "))
-        lst=[]
 
-        for _ in range(num):
-            lst.append(random.randint(1,6))
-
-        for i in range(num):
-            print(lst[i])
+        lst=[random.randint(1,6) for _ in range(num)]
+        print("Random Numbers : ",*lst) # unpacking operator
 
     elif choice=='n':
         print("Thank you !")
