@@ -36,6 +36,8 @@ while True:
         else:
             print("Tie")
 
+    if input("Wanna Play again ? (y/n) : ").lower() == 'n':
+        break
     
 
 
