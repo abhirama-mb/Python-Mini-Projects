@@ -4,7 +4,16 @@ while True:
     choice=input("Do you wanna roll a Dice ? (y/n) : ").lower()
 
     if choice=='y':
-        num=int(input("GREAT!!\nHow many ? : "))
+        try:
+            num=int(input("GREAT!!\nHow many ? : "))
+        except ValueError:
+            print("Invalid input! Please enter an integer.")
+            continue
+
+        if num <= 0:
+            print("Please enter a positive integer.")
+            continue
+
         count_times += num
 
         lst=[random.randint(1,6) for _ in range(num)]
@@ -26,4 +35,3 @@ print(f"You have generated total of {count_times} random numbers.\n")
 # ✅ Used _ as the loop variable since it isn't used.
 
 
-# add expection handling
