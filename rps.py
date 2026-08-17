@@ -1,7 +1,20 @@
 import random as r
 
 print("\nWelcome to ROCK, PAPER, SCISSORS game \n")
+emojis = { 
+    'r':'🪨',
+    'p':'📰',
+    's':'✂️' 
+}
+
 choices = ('r','p','s')
+
+wins_against = {
+    'r': 's',   
+    'p': 'r', 
+    's': 'p'    
+}
+
 
 while True:
     my_choice=input("Enter (r/p/s) : ").lower()
@@ -9,34 +22,20 @@ while True:
         print("Invalid Choice")
         continue
         
-    computer_choice=r.choice(choices)
-    print(f"Computer chose: {computer_choice}")
+    computer_choice = r.choice(choices)
 
-    if my_choice == 'r' :
-        if computer_choice == 's':
-            print("you won")
-        elif computer_choice == 'p':
-            print("you lost")
-        else:
-            print("Tie")
+    print(f"You chose: {emojis[my_choice]}")
+    print(f"Computer chose: {emojis[computer_choice]}")
 
-    elif my_choice == 'p':
-        if computer_choice == 'r':
-            print("you won")
-        elif computer_choice == 's':      
-            print("you lost")
-        else:
-            print("Tie")
+    if my_choice == computer_choice:
+        print("Its a Tie")
+    elif wins_against[my_choice] == computer_choice:
+        print("YOU WON ")
+    else:
+        print("You lost ")
 
-    elif my_choice == 's':
-        if computer_choice == 'p':
-            print("you won")
-        elif computer_choice == 'r':      
-            print("you lost")
-        else:
-            print("Tie")
 
-    if input("Wanna Play again ? (y/n) : ").lower() == 'n':
+    if input("Press N to stop (Enter to continue): ").lower() == 'n':
         break
     
 
