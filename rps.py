@@ -1,6 +1,23 @@
 import random as r
 
-def get_user_info():
+ROCK ='r'
+PAPER = 'p'
+SCISSORS = 's'
+emojis = { 
+    ROCK:'🪨',
+    PAPER:'📰',
+    SCISSORS:'✂️' 
+}
+
+choices = tuple(emojis.keys())  # choices = ('r','p','s')
+
+wins_against = {
+    ROCK: SCISSORS,   
+    PAPER: ROCK, 
+    SCISSORS: PAPER    
+}
+
+def get_user_choice():
     while True:
         user_choice=input("Enter (r/p/s) : ").lower()
         if user_choice in choices:
@@ -24,7 +41,7 @@ def determine_winner(my_choice,computer_choice):
 def play_rps():
     print("\nWelcome to ROCK, PAPER, SCISSORS game \n")
     while True:
-        my_choice = get_user_info()
+        my_choice = get_user_choice()
 
         computer_choice = r.choice(choices)
 
@@ -34,18 +51,5 @@ def play_rps():
         if input("Press N to stop (Enter to continue): ").lower() == 'n':
             break
     
-choices = ('r','p','s')
-
-emojis = { 
-    'r':'🪨',
-    'p':'📰',
-    's':'✂️' 
-}
-
-wins_against = {
-    'r': 's',   
-    'p': 'r', 
-    's': 'p'    
-}
 
 play_rps()
