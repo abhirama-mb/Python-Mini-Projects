@@ -18,6 +18,8 @@ def binary_search(arr,target):
 
 
 
-a = [10,20,30,40,50,60,100,400]
+a = [10,20,30,40,50,60,100,400]    # to apply Binary search, arr must be sorted
 print(binary_search(a,60))    # 5
 print(binary_search(a,2000))  # -1
+
+# log n

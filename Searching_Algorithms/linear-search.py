@@ -9,3 +9,6 @@ def linear_search(arr,target):
 a = [100,20,50,120,10,30,20]
 print(linear_search(a,10))    # 4
 print(linear_search(a,2000))  # -1
+
+# TC-> O(n) worst case
+#      O(1) best case
