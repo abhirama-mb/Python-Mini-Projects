@@ -23,7 +23,7 @@ print(f'After Sorting : {a}')
 
 ''' 
     Compare adjacent elements, swap if they're in the wrong order,
-    and repeat until the largest remaining element bubbles to the end.   
+    and repeat until the largest remaining element bubbles to the end.                                        
 
     Time Complexity: O(n²) | Best Case: O(n) | Space Complexity: O(1)
 
