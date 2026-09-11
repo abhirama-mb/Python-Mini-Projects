@@ -173,12 +173,60 @@ I am practicing working with:
 
 The repository also gives me practical experience with Git while continuously developing and refactoring these projects.
 
+## 🔎 Algorithms & Data Structures
+
+As I continue learning Python, I have also started implementing and studying basic algorithms and data structures to improve my problem-solving and programming fundamentals.
+
+### Searching Algorithms
+
+Implemented:
+
+* Linear Search
+* Binary Search
+
+These helped me understand different searching approaches and their time complexities.
+
+### Sorting Algorithms
+
+Implemented:
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+These implementations helped me understand sorting techniques, algorithm efficiency, recursion, and different time and space complexity trade-offs.
+
+### ⏱️ Execution Time
+
+I also added code to measure the execution time of Python programs using `time.perf_counter()`.
+
+This helps me compare the practical execution time of different implementations and understand the relationship between code efficiency and algorithm complexity.
+
+### 📚 Data Structures
+
+Implemented basic versions of:
+
+* Stack using Python lists
+* Queue using Python lists
+* Deque using Python lists
+
+These implementations helped me understand fundamental data structure operations such as:
+
+* Push and Pop
+* Enqueue and Dequeue
+* Adding and removing elements from both ends
+
+This section is helping me build a stronger foundation in **Data Structures and Algorithms (DSA)** while improving my understanding of how different operations affect performance.
+
 ## 🎯 Purpose
 
-This repository is part of my journey toward becoming a better programmer by focusing on:
+This repository is part of my journey to strengthen my **Python, problem-solving, and software development skills** through hands-on practice.
 
-**Python fundamentals → Modularization → DRY → Reusable Code → Third-Party Packages → Virtual Environments → Git & GitHub**
+**Python → Clean Code → Algorithms & Data Structures → Efficiency → Git & GitHub**
 
-More Python projects will be added as I continue learning, building, and refactoring my code.
+More projects and implementations will be added as I continue learning and improving.
 
 > **Learn → Build → Refactor → Understand → Repeat**
+
